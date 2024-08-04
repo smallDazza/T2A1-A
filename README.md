@@ -14,14 +14,19 @@ An example of a application with this type of architecture could be a weather ap
     5 - Then the Controller decides how to display this information to the user and advises the View on how to render this data for display.
 
 References:
+
 Pratap M., 2024. How does the Python MVC Framework Work [Online]
-Available at:  https://supersourcing.com/blog/how-does-the-python-mvc-framework-work-what-are-the-benefits/ 
+Available at:  https://supersourcing.com/blog/how-does-the-python-mvc-framework-work-what-are-the-benefits/
+
 GeeksforGeeks., 2024. MVC Design Pattern [Online]
 Available at:   https://www.geeksforgeeks.org/mvc-design-pattern/
+
 Kumar N., 2021. How the Model View Controller Architecture Works [Online]
 Available at:   https://www.freecodecamp.org/news/model-view-architecture/
 
 ### Question 2 Answer:
 - A commonly used database in an API project, such as a flask application with Python, would be using a PostgreSQL database. The pros and cons of using this type of database are:
     - Pros:
-        - 
+        - it is open source and freely available, allowing the freedom of use to implement and modify according to the project needs. Because of this active and open source community it is continually updated and improved on for better solutions.
+        - Postgres is highly extensible. What this means is the database can easily be extended, it is not fixed, so any new custom data types, functions, operators and languages can easily be added as required.
+        -  
