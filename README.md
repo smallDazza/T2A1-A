@@ -75,15 +75,46 @@ The implementation of an Agile project management methodology for an API project
 
     At the end of each sprint task goal, the whole team will come together to review, plan ahead for future sprints and retrospectively analyse what went well and not so well for this task.
 
-    Scrum real world examples:
+    Scrum real world example:
 
     - Salesforce:
 
-        - Salesforce embraced a scrum methodology for its cloud based products back in late 2006. Before this, and the reason for their change, was because they had seen their seasonal releases slip from 4 per year, when first started, go down to just one per year. So they knew they had to change their development methodology.
-
-        - Since adopting a scrum methodology in late 2006, by 2010 each major release had been successfully delivered on the exact day as scheduled and their customer satisfaction indicator was at 94%. Another scrum advantage they saw was an increase in productivity. Measuring by features produced per developer, they saw an increase of 38%. The case study white paper done on this in 2010 can be reviewed from this link: 
+        - Salesforce embraced a scrum methodology for its cloud based products back in late 2006. Before this, and the reason for their change, was because they had seen their seasonal releases slip from 4 per year, when first started, go down to just one per year. So they knew they had to change their development methodology. Since adopting a scrum methodology in late 2006, by 2010 each major release had been successfully delivered on the exact day as scheduled and their customer satisfaction indicator was at 94%. Another scrum advantage they saw was an increase in productivity, measuring by features produced per developer, they saw an increase of 38%. The case study white paper done on this in 2010 can be reviewed from this link: 
 
         - [The inside story of salesforce.coms transformation from waterfall to agile](https://web.archive.org/web/20110429103410/http://www.ca.com/Files/WhitePapers/wp-agile-development_239775.pdf)
+
+- KANBAN:
+
+    Kanban methodology for projects is more a visual signaling mechanism where the workflow is represented on a kanban board by tasks that will flow from one stage of the workflow to the next stage. For example, the most commmon workflow or columns of each stage are 'To Do', 'In Progress', 'In Review' and 'Done' but these are most often customised by the development team for each specific project. 
+    
+    When each task has been reviewed / accomplished by a development team menmber at a stage on the kanban board, they will move the task to the next stage until the outcome of 'Done' is achieved. Depending on the size of the project and the development team, each stage could be assigned and achieved by the same team emeber or different team members.
+
+    With kanban, releases or updates are done when they are ready, not based on predetermined dates or a regular schedules like scrum. The whole development team works together and owns the kanban board to achieve the projects outcomes. Because of this, the most common practice to deal with issues or blockages, is to implement  Work In Progress (WIP) limits, where caps are placed on the number of tasks that can be placed in any particular column. When the cap or limit is reached the whole team can work together to resolve the tasks that stalled the workflow process.
+
+    Kanban real world example:
+
+    - Microsoft:
+
+        - Microsoft Commerce and Ecosystems division were having issues with most engineers still using a mixture of both the waterfall and scrum methodologies. They were constantly missing sprint conclusions and had a need to visualize their work, which scrum could not provide. So they decided to transition across to the kanban method. The kanban method and its visual nature made it easier for the entire team to see what needs to be done, wheather it was a newcomer to the team, someone back from vacation or a part timer, all team members could visually identify whats next on the kanban board. The results were a smoother process, happier customers and a team that worked well together. The article and reference can be viewed form this link:
+
+        - [Deploying Kanban at Microsoft leads to engineering excellence](https://www.microsoft.com/insidetrack/blog/deploying-kanban-at-microsoft-leads-to-engineering-excellence/)
+
+References:
+
+Rehkopf, M. Atlassian. Kanban vs. scrum: which agile are you? [Online]
+Available at: https://www.atlassian.com/agile/kanban/kanban-vs-scrum
+
+GeeksforGeeks. 2024. Kanban vs. Scrum : Top Differences You Should Know [Online]
+Available at: https://www.geeksforgeeks.org/difference-between-scrum-and-kanban/
+
+## Question 4 Answers:
+
+A standard source control process for an API project will be using Git and Github.
+
+
+
+
+
 
 
 
