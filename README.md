@@ -95,7 +95,7 @@ The implementation of an Agile project management methodology for an API project
 
     - Microsoft:
 
-        - Microsoft Commerce and Ecosystems division were having issues with most engineers still using a mixture of both the waterfall and scrum methodologies. They were constantly missing sprint conclusions and had a need to visualize their work, which scrum could not provide. So they decided to transition across to the kanban method. The kanban method and its visual nature made it easier for the entire team to see what needs to be done, wheather it was a newcomer to the team, someone back from vacation or a part timer, all team members could visually identify whats next on the kanban board. The results were a smoother process, happier customers and a team that worked well together. The article and reference can be viewed form this link:
+        - Microsoft Commerce and Ecosystems division were having issues with most engineers still using a mixture of both the waterfall and scrum methodologies. They were constantly missing sprint conclusions and had a need to visualize their work, which scrum could not provide. So they decided to transition across to the kanban method. The kanban method and its visual nature made it easier for the entire team to see what needed to be done, wheather it was a newcomer to the team, someone back from vacation or a part timer, all team members could visually identify whats next on the kanban board. The results were a smoother process, happier customers and a team that worked well together. The article and reference can be viewed form this link:
 
         - [Deploying Kanban at Microsoft leads to engineering excellence](https://www.microsoft.com/insidetrack/blog/deploying-kanban-at-microsoft-leads-to-engineering-excellence/)
 
@@ -108,8 +108,56 @@ GeeksforGeeks. 2024. Kanban vs. Scrum : Top Differences You Should Know [Online]
 Available at: https://www.geeksforgeeks.org/difference-between-scrum-and-kanban/
 
 ## Question 4 Answers:
+A standard source control process for an API project will be first the project development team needing to use / deciding to use a version control systems software. This VCS software is used by the development team to manage changes in the projects source code over the length of time the project takes to complete.
+The development team process for the VCS of the project will be applying a number of standard practices, these are:
 
-A standard source control process for an API project will be using Git and Github.
+    - Repository setup: organising the structure of the code into clear and consistent repositories.
+    - Branching strategies: to manage code changes a good branch strategy is required. This could be having a 'main' branch for production ready code, a 'dev' branch for ongoing developement and testing, then creating new branches as required for future version releases or bug fixes where these can be merged back into the main branch when finished.
+    - Commit messages & frequency: when team members are commiting changes they need to write concise and informative messages. This way other members of the team will know and understand what they have done. Members should also be instructed to make regular frequent small commits rather than infrequent larger commits. This makes tracking changes and identification of bugs easier for all team members.
+    - Using pull requests: team members should use pull requests for all code changes. These pull requests can be used for reviewing code, testing and code quality reviews before merging them back into the 'main' branch.
+    -  CI/CD processes: a Continuous Integration/Continuous Deployment process should be implemented. This involves a pipeline to trigger the automation of the building, testing and deployment of code changes to the dev environment.
+    - Resolving conflicts: all team members should work together to resolve any merging conflicts quickly when they happen. These conflicts happen when different members have modified the same part of a file.
+    - .gitignore: To specifically have any file or directories ignored by the VCS software, member should use a .gitignore file.
+    - Security: access control measures should be used by the dev team to protect the main production branch. This security should help prevent things like deletions, direct pushing to production and unauthorised access.
+    - Cleanup process: a branch cleanup process should be regularly done to remove old & unused branches. This will maintain a managable and clean repository.
+    - Documentation: The repository should include a documentation file or README file to guide any new or current dev team members of the processes of building, running, testing and cloning any part of the software project.
+
+Examples of VCS software tools available in the market are:
+
+    1. Git: Git is a open source VCS software that tracks the project changes, staging areas and commits these to the repository. It is the most widely used VCS system in the world and has become a standard in the software development industry.
+    2. GitHub: GitHub is a cloud based hosting service tool that hosts the Git repositories. GitHub provides a wide variety of different VCS features for collaboration and access control. It is owned by Microsoft and tends to be used for more open source community public code access.
+    3. BitBucket: is a very similar VCS Git repository management tool with all the same features as GitHub but tends to more widely used for the private business sector. It is owned by Atlassian.
+    4. AWS CodeCommit: this is AWS (Amazons) version of a VCS Git repository management tool.
+
+Examples of projects using VCS via GitHub:
+
+    1. This link provides a basic GitHub repository template & example and can be used to create a well documented README file:
+[GitHub Call-for-Code / Project-Sample](https://github.com/Call-for-Code/Project-Sample)
+
+    2. This link is the Ruby on Rails platform project. This has 5000+ contributors & 92380 commits to date:
+[GitHub rails / rails](https://github.com/rails/rails)
+
+    3. This link is the facebook / react platform project. This has 1646 contributors & 19245 commits to date:
+[GitHub facebook / react](https://github.com/facebook/react)
+
+References:
+
+Atlassian, 2024. What is version control? [Online]
+Available at: https://www.atlassian.com/git/tutorials/what-is-version-control
+
+Masal, B. 2023. Best Practices for Effective Source Control (version control) in Software Development. [Online]
+Available at: https://www.linkedin.com/pulse/best-practices-effective-source-control-version-software-balaji-masal-agxpf
+
+Indeed. 2024. Source control: definition, importance and examples. [Online]
+Available at: https://uk.indeed.com/career-advice/career-development/source-control
+
+mattfarina. 2024. Large Projects on GitHub [Online]
+Available at: https://gist.github.com/mattfarina/7627cb5ebb8fc01bfd62f4a6942fce04
+
+## Question 5 Answers:
+A standard testing process for a API project
+
+
 
 
 
