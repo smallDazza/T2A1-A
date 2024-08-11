@@ -155,7 +155,44 @@ mattfarina. 2024. Large Projects on GitHub [Online]
 Available at: https://gist.github.com/mattfarina/7627cb5ebb8fc01bfd62f4a6942fce04
 
 ## Question 5 Answers:
-A standard testing process for a API project
+For a standard testing process for a API project, the development team will first have to either write their own framework or choose from a number of API software testing tools. Some of the most common API testing tools available are:
+
+- Postman API Platform.
+- Amazon API Gateway.
+- Google Apigee.
+- Insomnia by Kong.
+- Swagger from SmartBear.
+- Microsoft Azure API Management.
+
+The development team will then decide on the types of tests required for their application by verifying the functionality & performance of the API. The most common types of API tests are:
+
+- UI testing: not specific to an API but this testing is important for the applications integration between the user interface (front end experience) and the API (back end functionality). This type of testing is usually a manual process.
+- Functional testing: this testing ensures the API functions in the exact way it is designed to for the application. It is done by verifying that the correct responses and data formats are returned by the API from specific requests. These tests should include:
+    - status code verification: the correct status codes are returned eg; 200, 404 etc.
+    - response data validation: the responses include all the correct data fields & values.
+    - date accuracy: data returned is as expected & accurate.
+    - error handling: all errors are handled correctly and display meaningful messages.
+    - operates using CRUD: all create, read, update and delete functions works as expected.
+- Performance testing: this testing ensures the API can perform and handle large volumnes of data and traffic. It is done by replicating multiple users with multiple requests so the API will be under load and then measuring its performance. These tests should include:
+    - load test: replicating high user traffic to measure speed & responsiveness times.
+    - response time: measuring the time to respond between different loads eg; normal & peak loads.
+    - scalability: when increasing the load and users, testing how it scales.
+- Security testing: this testing ensures the API is secure. It must be able to prevent any unauthorized access and protect the applications sensitive data. This is done by executing tests to identify any vulnerabilities in the API system. These tests should include:
+    - authentication: verifying the proper authentication and manages invalid credentials correctly.
+    - authorization: verifying all users can only have access to the data they can modify or view.
+    - input validation: tests like SQL & command injection to validate all inputs.
+    - data encryption: testing the data during transmission is encrypted.  
+- API documentation testing: this type of testing is used to determine that the API documentation accurately reflects its capabilities and all its features work as expected for the projects application. Similar to functional testing but could be incorporated with tests that include:
+    - ease of use: verifying the API integrates well and is easy to use.
+    - naming conventions: checking the naming conventions of all endpoints and parameters are consistent.
+    - document accuracy: verify the documentation is up to date and accurate for the API.
+
+Examples of real world API testing:
+
+- 
+
+
+
 
 
 
