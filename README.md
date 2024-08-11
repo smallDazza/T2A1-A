@@ -188,8 +188,43 @@ The development team will then decide on the types of tests required for their a
     - document accuracy: verify the documentation is up to date and accurate for the API.
 
 Examples of real world API testing:
+- a airline booking site application like skyscanner, needs to display to the user all the correct airline flight details, dates and rates in a timely manner. To do this it must effectively communicate with all the different airlines API's. The skyscanner development team must regularly do the above API tests to ensure their website application is successfully communicating with all the different airlines API services and returning the correct results in a acceptable timeframe. Should the user also then decide to purchase a certain airline product they must ensure the users personal details are effectively secure and correctly sent to the airlines boooking system. 
 
-- 
+- another example is the company i work for called myPak Solutions. MyPak provides a packing application for pharmacies around Australia to print their patients prescribed medication details on a blisterpack packaging supplied by the pharmacy, so they can effectively take their medications in a safe manner, reducing the chance of dependency or overdosing. To do this the myPak application must have access to the pharmacies medication dispensing programs data, which is done via their API's.
+Their are currently 6 dispensing medication software companies in Australia and 4 of them provide access to their data via their own API's. MyPak's development team regularly use the same above API tests to ensure that patients medication data its packing application is accessing is correct, secure and achieved in a timely manner. 
+
+References:
+
+Yasar K, Gillis A. 2024. What is API testing? Everything you need to know. [Online]
+Available at: https://www.techtarget.com/searchapparchitecture/definition/API-testing
+
+Codeheart I. 2023. API Testing: A Guide for Developers. [Online]
+Available at: https://caisy.io/blog/api-testing-for-developers
+
+Testsigma. 2024. API Testing : What It is, How to Test & Best Practices. [Online]
+Available at: https://testsigma.com/guides/api-testing/
+
+## Question 6 Answers:
+The 3 principles of information system security are explained below and known as the CIA triad:
+
+1. Confidentiality: this principle is to ensure that unauthorised users cannot accces sensitive / personal information & data. Measures must be put in place to ensure only authorised users can access this type of information and any other user is restricted , so that this type of data will remain confidential. One of these measures would be to check the authorisation levels of all users that have access to the applications data.
+
+2. Integrity: this principle is to ensure the data is accurate, consistent and trustworthy. Measures are required so that no modifying of the data is done in transmission either accidently or intentionaly by malicious attacks, or by any unauthorised users.
+
+3. Availability: this principle is to ensure that data is available to the authorised users of the application within a given timeframe. The timeframe availability is determined by the use case of the application but all technical infrastructure & hardware must be maintained and online to meet these expectations.
+
+References:
+
+GeekforGeeks. 2022. Principle of Information System Security. [Online]
+Available at: https://www.geeksforgeeks.org/principle-of-information-system-security/
+
+Milkovski I. 2022. What are the 3 Principles of Information Security? [Online]
+Available at: https://www.linkedin.com/pulse/what-3-principles-information-security-igor-milkovski-m-a
+
+Hashemi-Pour C. CIA triad (confidentiality, integrity and availability). [Online]
+Available at: https://www.techtarget.com/whatis/definition/Confidentiality-integrity-and-availability-CIA
+
+## Question 7 Answers:
 
 
 
