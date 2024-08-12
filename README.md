@@ -211,7 +211,7 @@ The 3 principles of information system security are explained below and known as
 
 2. Integrity: this principle is to ensure the data is accurate, consistent and trustworthy. Measures are required so that no modifying of the data is done in transmission either accidently or intentionaly by malicious attacks, or by any unauthorised users.
 
-3. Availability: this principle is to ensure that data is available to the authorised users of the application within a given timeframe. The timeframe availability is determined by the use case of the application but all technical infrastructure & hardware must be maintained and online to meet these expectations.
+3. Availability: this principle is to ensure that data is available to the authorised users of the application within a given timeframe. The timeframe availability is determined by the use case of the application but all technical infrastructure & hardware must be maintained, online and backed up to meet these expectations.
 
 References:
 
@@ -225,6 +225,21 @@ Hashemi-Pour C. CIA triad (confidentiality, integrity and availability). [Online
 Available at: https://www.techtarget.com/whatis/definition/Confidentiality-integrity-and-availability-CIA
 
 ## Question 7 Answers:
+The implementation of the 3 CIA triad principles of information system security in an API project is essential and in most cases must be done to meet local and international privacy laws. To achieve all 3 principles in any API project the following measures should be implemented:
+
+- data encryption mechanisms: during data transmission this can be achieved by using secure protocols such as HTTPS. HTTPS will encrypt HTTP requests & responses with a technology called TLS. If an attacker were to access these HTTPS requests and responses they would only see random characters instead of the text being transmitted.
+- password encryption techniques such as hashing: hashing is widely used in cryptography and is the process of converting any data into a fixed length hash that can never be reversed. This is why it is widely used for encrypting passwords. There are many different ways in coding to hash a password but one example, in the image below, is in Python to hash a password we can use the module called 'bcrypt':
+![hash code example using the bcrypt module](./images/bcrypt%20code.png)
+
+The red arrow indicates the encrypted or hashed password generated. The 'salt' variable in this code is a random input of additional one way data added to the hash for an extra layer of security.
+- the use of checksum methods: to check the accuracy of data transmission over a system or network and that no changes, damage or errors have occured between the sender & receiver, a process called checksum can be used. The checksum method in coding is a algorithm that derives a value from the data, then compares this value at both the sender and recievers end. If there is any changes in the value it inidicates the unreliability of the data transmitted. This process verifies the integrity and authenticity of the API data. 
+- keeping authorised user permissions & access control lists up to date: 
+- using two-factor authentication for access to an application or API:
+- a VCS (version control system) for application releases:
+- backing up of data: 
+- redundancy and failover measures:
+
+
 
 
 
