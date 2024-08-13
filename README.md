@@ -227,18 +227,47 @@ Available at: https://www.techtarget.com/whatis/definition/Confidentiality-integ
 ## Question 7 Answers:
 The implementation of the 3 CIA triad principles of information system security in an API project is essential and in most cases must be done to meet local and international privacy laws. To achieve all 3 principles in any API project the following measures should be implemented:
 
-- data encryption mechanisms: during data transmission this can be achieved by using secure protocols such as HTTPS. HTTPS will encrypt HTTP requests & responses with a technology called TLS. If an attacker were to access these HTTPS requests and responses they would only see random characters instead of the text being transmitted.
-- password encryption techniques such as hashing: hashing is widely used in cryptography and is the process of converting any data into a fixed length hash that can never be reversed. This is why it is widely used for encrypting passwords. There are many different ways in coding to hash a password but one example, in the image below, is in Python to hash a password we can use the module called 'bcrypt':
+- data encryption mechanisms: to maintain the integrity of data during transmission data encryption can be achieved by using secure protocols such as HTTPS. HTTPS will encrypt HTTP requests & responses with a technology called TLS. If an attacker were to access these HTTPS requests and responses they would only see random characters instead of the text being transmitted.
+- password encryption techniques such as hashing: one process called hashing can help achieve confidentiality. It is widely used in cryptography and is the process of converting any data into a fixed length hash that can never be reversed. This is why it is widely used for encrypting passwords. There are many different ways in coding to hash a password but one example, in the image below, is in Python to hash a password we can use the module called 'bcrypt':
 ![hash code example using the bcrypt module](./images/bcrypt%20code.png)
 
 The red arrow indicates the encrypted or hashed password generated. The 'salt' variable in this code is a random input of additional one way data added to the hash for an extra layer of security.
 - the use of checksum methods: to check the accuracy of data transmission over a system or network and that no changes, damage or errors have occured between the sender & receiver, a process called checksum can be used. The checksum method in coding is a algorithm that derives a value from the data, then compares this value at both the sender and recievers end. If there is any changes in the value it inidicates the unreliability of the data transmitted. This process verifies the integrity and authenticity of the API data. 
-- keeping authorised user permissions & access control lists up to date: 
-- using two-factor authentication for access to an application or API:
-- a VCS (version control system) for application releases:
-- backing up of data: 
-- redundancy and failover measures:
+- keeping authorised user permissions & access control lists up to date: in keeping API access & data confidential, application administrators should regularly inspect that the list of users and permission levels are up to date. Especially if the API application is a large project with many team members/users joining or leaving, as this will not allow any unauthorised access from team members that have left.
+- using two-factor authentication or a OTP for access to an application or API: the use of either a 2FA or OTP process for users when requiring access is a second layer of security to ensure both the confidentiality & integrity of the API data , so only users with these keys are allowed to create, read, update & delete. The most common of these used for API security is generating security tokens or One Time Passcodes (OTP) to be entered and verified before the users access or request is granted. Using python there are a number of modules & libraries to help with both of these. Below are a couple of examples applied in code:
+    - security tokens using the Json Web Tokens (JWT) library: 
 
+    ![encoding & decoding JWT security tokens](./images/jwt%20token.png)
+
+    The green arrow indicates the password entered (as a dictionary), then the red arrow indicates the jwt token generated to encode this password. The blue arrow indicates the token decoded to display and verify it is the same correct password.
+
+    - One Time Passcode (OTP) using the pyotp library:
+
+    ![OTP creation and verification](./images/OTP%20number.png)
+
+    Here are 2 examples of an OTP number being generated. The green arrow indicates when the user enters the correct matching OTP number and access in granted. The red arrow indicates when the user enters a incorrect OTP number and access is denied.
+- a VCS (version control system) for application releases: it is essential that the development team use a version control system for the life cycle of an API project. A VCS system ensures all changes to code are monitored, saved and merged so that the application can have scheduled update releases and the integrity of the code is ensured for reliability.
+- backing up of data, redundancy and failover measures: backing up of data is an important measure to ensure the availability of the applications data. Regular backing up of the database and storing these backups in a secure and stable environment, so if a failure were to happen a database backup restoration procedure could be initiated to have the API application back online as soon as possible. Failover mechanisms like a backup webserver that can immediately take over the responsibilities should the main web server have a failure, preventing DDOS attacks by using load balancers to restrict & control the flow of traffic to certain ports or areas of the application, these are all options to ensure the availability of an API's application to the users when required.
+
+References:
+
+Alrazihi T. 2023. Enhancing Software Security: Implementing the CIA Triad in Your Application. [Online]
+Available at: https://www.linkedin.com/pulse/enhancing-software-security-implementing-cia-triad-your-alrazihi-pw0ae
+
+Hashem-Pour C. 2023. CIA triad (confidentiality, integrity and availability). [Online]
+Available at: https://www.techtarget.com/whatis/definition/Confidentiality-integrity-and-availability-CIA
+
+freeCodeCamp. 2020 The CIA Triad — Confidentiality, Integrity, and Availability Explained. [Online]
+Available at: https://www.freecodecamp.org/news/the-cia-triad-confidentiality-integrity-and-availability-explained/
+
+Krishna A. 2023. How To Generate OTPs Using PyOTP in Python. [Online]
+Available at: https://blog.ashutoshkrris.in/how-to-generate-otps-using-pyotp-in-python
+
+Padilla J. 2022. Welcome to PyJWT [Online]
+Available at: https://pyjwt.readthedocs.io/en/stable/index.html#
+
+## Question 8 Answers:
+The legal obligations for a social media application to consider in regards to handling their user data
 
 
 
