@@ -267,7 +267,25 @@ Padilla J. 2022. Welcome to PyJWT [Online]
 Available at: https://pyjwt.readthedocs.io/en/stable/index.html#
 
 ## Question 8 Answers:
-The legal obligations for a social media application to consider in regards to handling their user data
+The legal obligations for a social media application to consider in regards to handling their user personal data if operating in Australia will be the Australian Governments Privacy Act 1988. This Privacy Act applies to all Australian organisations with a annual turnover of more than $3 million or factors in if an organisation operates in Australia, including carrying on a business or presence in Australia,  so will include all social media applications like Facebook, Twitter, Instagram etc. 
+
+The Privacy Act 1988 was introduced to protect & promote the privacy of individuals and how these organisations handle personal information.
+Specifically regarding social media applications and the legal obligations of the Privacy Act they would be required to meet, would be the following:
+
+- Privacy Policy: organisations covered under the Privacy Act 1988 must have a privacy policy in place which can be printed out or viewed on a website or mobile device. This privacy policy must cover and disclose the following:
+    - organisations name and contact details.
+    - the kind of personal information they collect and save.
+    - how this information is collected and where they save it.
+    - their reasons for collecting this personal information.
+    - how they use this personal information.
+    - how users can access their own personal information and change it.
+    - how complaints can be lodged and handled regarding personal information.
+    - if your informaation will be disclosed outside of Australia and the other countries they will disclose it to.
+    - may also include the time frame they hold onto your personal information.
+
+- Personal & sensitive information collection:
+    - 
+
 
 
 
