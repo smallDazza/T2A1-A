@@ -270,9 +270,9 @@ Available at: https://pyjwt.readthedocs.io/en/stable/index.html#
 The legal obligations for a social media application to consider in regards to handling their user personal data if operating in Australia will be the Australian Governments Privacy Act 1988. This Privacy Act applies to all Australian organisations with a annual turnover of more than $3 million or factors in if an organisation operates in Australia, including carrying on a business or presence in Australia,  so will include all social media applications like Facebook, Twitter, Instagram etc. 
 
 The Privacy Act 1988 was introduced to protect & promote the privacy of individuals and how these organisations handle personal information.
-Specifically regarding social media applications and the legal obligations of the Privacy Act they would be required to meet, would be the following:
+Specifically regarding social media applications and the legal obligations of the Privacy Act they would be required to meet, some would be the following (Note = the term 'organisation' below will refer to a social media developer / application):
 
-- Privacy Policy: organisations covered under the Privacy Act 1988 must have a privacy policy in place which can be printed out or viewed on a website or mobile device. This privacy policy must cover and disclose the following:
+- Condsideration of a Privacy Policy: an organisations covered under the Privacy Act 1988 must have a privacy policy in place which can be printed out or viewed on a website or mobile device. This privacy policy must cover and disclose the following:
     - organisations name and contact details.
     - the kind of personal information they collect and save.
     - how this information is collected and where they save it.
@@ -283,8 +283,45 @@ Specifically regarding social media applications and the legal obligations of th
     - if your informaation will be disclosed outside of Australia and the other countries they will disclose it to.
     - may also include the time frame they hold onto your personal information.
 
-- Personal & sensitive information collection:
-    - 
+    Reference: ![Privacy Act 1988, Schedule 1, Part 1.](https://www.legislation.gov.au/C2004A03712/latest/text)
+
+- Personal & sensitive information collected by a organisation:
+    - Personal information will refer to a individuals name, address, phone number, DOB, signature, photographs, biometrics and location information from a mobile device. 
+        - however if a photo or video taken by someone, without permission and was done in a personal capacity, then the Privacy Act 1988 does not apply to these.
+    - Sensitive information refers to a individuals race or ethnicity, political & religious beliefs and sexual orientation.
+    - the organisation must not collect personal information unless it is reasonably nescessary, or directly related to one or more of the organisations activities.
+    - the organisation must not collect sensitive information about an individual unless the individual consents to the collection and it is reasonably nescessary, or directly related to one or more of the organisations activities.
+    - the organisation must only collect personal information by lawful & fair means.
+    - the organisation must collect personal information about that individual only from the individual.
+
+    Reference: ![Privacy Act 1988, Schedule 1, Part 2, Principle 3.](https://www.legislation.gov.au/C2004A03712/latest/text)
+
+- Unsolicited Personal Information: if the organisation recieves personal information it did not ask for / solicit, then the organisation needs to determine if they would have collected the information using the same methods in above Principle 3:
+    - If not = they must destroy the unsolicited personal information.
+    - If so = they must notify the individual as per Principle 5 details and to make them aware of the collection of their personal information and hold it following the same privacy act guidelines.
+
+    Reference: ![Privacy Act 1988, Schedule 1, Part 2, Principle 4.](https://www.legislation.gov.au/C2004A03712/latest/text)
+
+- Notification of collecting personal information: when an organisation collects an individuals personal information it must notify the individual that it has done so and :
+    - the organisation must identify itself and its contact details.
+    - how it received this information.
+    - the purposes for which they will use this information, including if they share this information with any other organisations.
+    - the organistion must disclose how the individuals can access their privacy policy and allow them access to their personal information and / or make complaints about their use of this personal information.
+
+    Reference: ![Privacy Act 1988, Schedule 1, Part 2, Principle 5.](https://www.legislation.gov.au/C2004A03712/latest/text)
+
+- Dealing with personal information: if an organisation has collected / holds the personal information of an individual for a particular primary purpose then it must not use or disclose this information for any other secondary purposes unless:
+    - they receive the consent of the individual to do so.
+    - individuals would expect their personal information to be used for the secondary purpose if it is related to the primary purpose.
+    - required by an Australian law or court order.
+
+    Reference: ![Privacy Act 1988, Schedule 1, Part 3, Principle 6.](https://www.legislation.gov.au/C2004A03712/latest/text)
+
+## Question 9 Answers:
+The structural aspects of a relational database model are 
+
+
+
 
 
 
