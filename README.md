@@ -318,7 +318,25 @@ Specifically regarding social media applications and the legal obligations of th
     Reference: ![Privacy Act 1988, Schedule 1, Part 3, Principle 6.](https://www.legislation.gov.au/C2004A03712/latest/text)
 
 ## Question 9 Answers:
-The structural aspects of a relational database model are 
+A relational database allows data to be stored in tables that are related to each other using defined relationships. The structural aspects of these types of databases are:
+- Tables: the main building block of these databases which are sometimes called relations. Tables will each represent a particular entity of data to be stored and are structured into rows and columns. Each of these rows in the table will be a data instance of the entity. Each of the columns in a table will define certain attributes or characteristics of these instances of data.
+- Rows: also called records will each contain instances of data for the entity being stored in the table. Each row will contain individual data sets that correspond to each table column/attirbute.
+- Columns: also called attributes and these will define the type of data that can be stored in the table. Each column will be named relevent to the specific entity data it will contain and the data type that it will be eg; dates, integer, text. They will also define data constraints such as if it will be a unique value or a null value.
+- Primary keys:  these are a certain column in every table that uniquely identifies each row of data. They ensure that each record is a distinct data set and can be directly referenced when required. Primary keys enable different tables in a database to have relationships.
+- Foreign keys: also a certain column in a table that can reference a primary key in another table. This also enables relationships between different tables so data in one table can be linked to data in another table.
+- Contsraints: these are the rules to enforce the integrity and consistency of the data being stored. There are primary key constraints, foreign key constraints, unique constraints which will help prevent invalid data being entered into the database tables. 
+- Indexes: these are data structures to speed up the querying of database table data. They contain all the information required to quickly and effieciently access the data requested.
+
+References:
+
+Gillis A. 2024. Definition relational database [Online]
+Available at: https://www.techtarget.com/searchdatamanagement/definition/relational-database
+
+SQL Savvy. 2024. The structure and components of relational databases [Online]
+Available at: https://www.linkedin.com/pulse/structure-components-relational-databases-suchc
+
+## Question 10 Answers:
+
 
 
 
