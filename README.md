@@ -359,6 +359,9 @@ Suganghi A. 2024. What are Integrity Constraints in DBMS? Types, Examples [Onlin
 Available at: https://www.knowledgehut.com/blog/database/integrity-constraints-in-dbms
 
 ## Question 11 Answers:
+The manipulative aspects of a relational database using SQL has 2 aspects, one being Data Definition Language (DDL), the second being Data Manipulation Language (DML). Both DDL & DML are commands used to create, access, transform, remove and analyse the data in the database tables.
+- Data Definition Language (DDL) 
+- Data Manipulation Commands (DML) . The DML commands used are 'SELECT', 'INSERT', 'UPDATE' and 'DELETE'. 
 
 
 
