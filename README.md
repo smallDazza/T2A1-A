@@ -322,7 +322,7 @@ A relational database allows data to be stored in tables that are related to eac
 - Tables: the main building block of these databases which are sometimes called relations. Tables will each represent a particular entity of data to be stored and are structured into rows and columns. Each of these rows in the table will be a data instance of the entity. Each of the columns in a table will define certain attributes or characteristics of these instances of data.
 - Rows: also called records will each contain instances of data for the entity being stored in the table. Each row will contain individual data sets that correspond to each table column/attirbute.
 - Columns: also called attributes and these will define the type of data that can be stored in the table. Each column will be named relevent to the specific entity data it will contain and the data type that it will be eg; dates, integer, text. They will also define data constraints such as if it will be a unique value or a null value.
-- Primary keys:  these are a certain column in every table that uniquely identifies each row of data. They ensure that each record is a distinct data set and can be directly referenced when required. Primary keys enable different tables in a database to have relationships.
+- Primary keys:  these are a certain column in most tables that uniquely identifies each row of data. They ensure that each record is a distinct data set and can be directly referenced when required. Primary keys enable different tables in a database to have relationships via referencing another tables foreign key.
 - Foreign keys: also a certain column in a table that can reference a primary key in another table. This also enables relationships between different tables so data in one table can be linked to data in another table.
 - Contsraints: these are the rules to enforce the integrity and consistency of the data being stored. There are primary key constraints, foreign key constraints, unique constraints which will help prevent invalid data being entered into the database tables. 
 - Indexes: these are data structures to speed up the querying of database table data. They contain all the information required to quickly and effieciently access the data requested.
@@ -336,6 +336,30 @@ SQL Savvy. 2024. The structure and components of relational databases [Online]
 Available at: https://www.linkedin.com/pulse/structure-components-relational-databases-suchc
 
 ## Question 10 Answers:
+In a relational database the integrity aspects are known as 'Integrity Constraints'.These constraints are a set of rules that help to ensure the data quality, consistency and security by being applied to the CRUD processes on the DBMS. The types of integrity rules are:
+
+1) Domain integrity constraint: these contraints are applied to each attribute in the database to ensure and check the value being entered meets the correct data type set by the constraint. For example, these constraints can be integer, character, date, time, string, etc. An example of these being used to create a table & its columns will be the blue code text: 
+![Domain contraint](/images/domain%20constraint.png)
+2) Entity integrity constraint: these constraints enforce the integrity of a tables data by ensuring its uniqueness. It does this by restricting the use of null values into the database attributes. Most commonly used by ensuring a primary key value in a table cannot be null, as this is a unique identifier for all rows. Example of code to create this will be the not null text:
+![Entity constraint](./images/entity%20constraint.png)
+3) Referential integrity constraint: these constraints establish a relationship and enforce data integrity between 2 tables also preventing inconsistences when refering to data across different tables. When a foreign key in a table 2 which references a primary key in another table 1, these constraints make sure every foreign key value exists in the table 1 primary key value. In code an example of the foreign key references:
+![Referential constraint](./images/Referential%20constraint.png) 
+4) Key integrity constraint: these constraints are used to uniquely identify one or more columns in a table and restrict duplicate values. The primary key constraint is a good example of this where it is used to uniquely identify a each row in the database ensuring no records will have the same primary key value. In code using the primary key:
+![key constraint](./images/key%20constraint.png)
+
+References:
+
+W3 schools. 2024. SQL Constraints [Online]
+Available at: https://www.w3schools.com/sql/sql_constraints.asp
+
+Gupta V. 2024. Integrity Constraints in DBMS - Types and Examples [Online]
+Available at: https://www.almabetter.com/bytes/articles/integrity-constraints-in-dbms
+
+Suganghi A. 2024. What are Integrity Constraints in DBMS? Types, Examples [Online]
+Available at: https://www.knowledgehut.com/blog/database/integrity-constraints-in-dbms
+
+## Question 11 Answers:
+
 
 
 
