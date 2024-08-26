@@ -339,12 +339,16 @@ Available at: https://www.linkedin.com/pulse/structure-components-relational-dat
 In a relational database the integrity aspects are known as 'Integrity Constraints'.These constraints are a set of rules that help to ensure the data quality, consistency and security by being applied to the CRUD processes on the DBMS. The types of integrity rules are:
 
 1) Domain integrity constraint: these contraints are applied to each attribute in the database to ensure and check the value being entered meets the correct data type set by the constraint. For example, these constraints can be integer, character, date, time, string, etc. An example of these being used to create a table & its columns will be the blue code text: 
+
 ![Domain contraint](/images/domain%20constraint.png)
 2) Entity integrity constraint: these constraints enforce the integrity of a tables data by ensuring its uniqueness. It does this by restricting the use of null values into the database attributes. Most commonly used by ensuring a primary key value in a table cannot be null, as this is a unique identifier for all rows. Example of code to create this will be the not null text:
+
 ![Entity constraint](./images/entity%20constraint.png)
 3) Referential integrity constraint: these constraints establish a relationship and enforce data integrity between 2 tables also preventing inconsistences when refering to data across different tables. When a foreign key in a table 2 which references a primary key in another table 1, these constraints make sure every foreign key value exists in the table 1 primary key value. In code an example of the foreign key references:
+
 ![Referential constraint](./images/Referential%20constraint.png) 
 4) Key integrity constraint: these constraints are used to uniquely identify one or more columns in a table and restrict duplicate values. The primary key constraint is a good example of this where it is used to uniquely identify a each row in the database ensuring no records will have the same primary key value. In code using the primary key:
+
 ![key constraint](./images/key%20constraint.png)
 
 References:
@@ -360,8 +364,28 @@ Available at: https://www.knowledgehut.com/blog/database/integrity-constraints-i
 
 ## Question 11 Answers:
 The manipulative aspects of a relational database using SQL has 2 aspects, one being Data Definition Language (DDL), the second being Data Manipulation Language (DML). Both DDL & DML are commands used to create, access, transform, remove and analyse the data in the database tables.
-- Data Definition Language (DDL) 
-- Data Manipulation Commands (DML) . The DML commands used are 'SELECT', 'INSERT', 'UPDATE' and 'DELETE'. 
+- Data Definition Language (DDL) are a set of commands used to define the schema of a database. Such commands will specify the structure of the database objects like the tables, indexes, views and constraints. Types of DDL commands are CREATE, DROP, ALTER, TRUNCATE AND RENAME and once these have been executed they automatically commit the changes, so cannot be undone. Examples in SQL:
+
+![DDL Commands](./images/DDL%20commands.png)
+- Data Manipulation Commands (DML) are a set of commands used to manipulate data inside of database tables. The operations they perform on the database data are transactional to add, alter, retrieve or remove and so do not automatically commit when executed, so can be rolled back if necessary should any errors happen. The types of DML commands used are SELECT, INSERT, UPDATE, MERGE and DELETE. Example in SQL:
+
+![DML Commands](./images/DML%20commands.png)
+
+References:
+
+Panigrahi K. 2023. Difference between DDL and DML in DBMS [Online]
+Available at: https://www.tutorialspoint.com/difference-between-ddl-and-dml-in-dbms
+
+GeeksforGeeks. 2024. Difference Between DDL and DML in DBMS [Online]
+Available at: https://www.geeksforgeeks.org/difference-between-ddl-and-dml-in-dbms/ 
+
+Bytes A. 2024. DML and DDL Commands in SQL [Online]
+Available at: https://www.almabetter.com/bytes/tutorials/sql/dml-ddl-commands-in-sql
+
+## Question 12 Answers:
+Conducting research into a web application: I have choesn the web app Booking.com, the url for this web app is: 
+
+1)  
 
 
 
