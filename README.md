@@ -383,9 +383,23 @@ Bytes A. 2024. DML and DDL Commands in SQL [Online]
 Available at: https://www.almabetter.com/bytes/tutorials/sql/dml-ddl-commands-in-sql
 
 ## Question 12 Answers:
-Conducting research into a web application: I have choesn the web app Booking.com, the url for this web app is: 
+Conducting research into a web application: I have choesn the web app Notion.so, the url for this web app is: https://www.notion.so/
 
-1)  
+1)  The tech stack used by the Notion application:
+    - Frontend:
+        - Frontend foundational browser technologies of HTML, CSS & javascript will be used for the applications UI to be displayed in users web browsers.
+        - React: for a responsive user interface experience, notion is using components from the React javascript library. React allows developers to build application user interfaces by combining different design components or creating custom components using javascript functions, for their application UI screens, web pages and apps.
+        - Redux: this is used to manage the 'state' of the application to keep it behaving consistently in different environments (client, server and native).
+        - Typescript: is used to ensure developer type safety and a better experience. This is a syntactic superset that is added on top of javascript as a syntax, so the developers know exactly what type of data is being used in the code.
+        - Webpack: to help with the applications performance webpack processes the applications javascript modules into bundles, which is usually one file, for better loading time of web browsers.
+    - Backend:
+        - Node.JS: notion builds its backend services with this javascript runtime environment. This allows both the front end and backend to be built using javascript and allows the application to run on any operating system software.
+        - Express.JS: this is used to handle their server side routing and build notions API endpoints. Express.js is a framework that builds RESTful API's for use with Node.js.
+        - PostgreSQL databases: notion uses this as their primary database for managing and storing the user data.
+    - Hosting:
+        - AWS: notion are using AWS RDS and S3 servers for hosting their databases and other services for effective data effiency and management.
+
+2)  Based on Notions own technology blogg page they are using AWS services to host the PostgreSQL databases. In particular they are using the AWS RDS service
 
 
 
