@@ -395,11 +395,28 @@ Conducting research into a web application: I have choesn the web app Notion.so,
     - Backend:
         - Node.JS: notion builds its backend services with this javascript runtime environment. This allows both the front end and backend to be built using javascript and allows the application to run on any operating system software.
         - Express.JS: this is used to handle their server side routing and build notions API endpoints. Express.js is a framework that builds RESTful API's for use with Node.js.
-        - PostgreSQL databases: notion uses this as their primary database for managing and storing the user data.
+        - PostgreSQL databases: notion uses this as their primary databases for managing and storing the user data.
     - Hosting:
         - AWS: notion are using AWS RDS and S3 servers for hosting their databases and other services for effective data effiency and management.
 
-2)  Based on Notions own technology blogg page they are using AWS services to host the PostgreSQL databases. In particular they are using the AWS RDS service
+    References:
+
+    Michael. 2023. Breaking Down Notion’s Tech Stack. [Online]
+    Available at: https://slashdev.io/-breaking-down-notions-tech-stack
+
+    The SaaS Talk. 2024. Exploring Notion: The Tech Stack Behind the Popular Tool [Online]
+    Available at: https://medium.com/@TheSaaSTalk/exploring-notion-the-tech-stack-behind-the-popular-tool-c3250326303d
+
+    Slim. 2019. I'm the engineer at Notion who rebuilt search. AMA! [Online]
+    Available at: https://www.reddit.com/r/Notion/comments/f0lb23/im_the_engineer_at_notion_who_rebuilt_search_ama/
+
+2)  Based on Notions own technology blogg and other sources (referenced below), Notions app infrastructure is being hosted by AWS services. In particular they are using the Amazon RDS service for use with PostgreSQL and AWS boast this is the easiest way to deploy, operate and scale PostgreSQL databases in the cloud. Notion are also using a number of other AWS services being integrated into their infrastructure for helping with large data management, effiency and security purposes. 
+    The following AWS infrasturcture services are being utilised by Notions app:
+    - Amazon RDS for PostgreSQL cloud service: PostgreSQL databases used for storing users data entered such as texts, headings, rows, lists, images and pages.
+    - Amazon S3 object storage servers: S3 servers are used for their ability to store, scale effectively for large amounts of data and support data processing engines at low cost.
+    - Apache Spark via Amazon EMR services:  Spark is a open source distribution processing system for managing large data workloads. Notion use this as their main data processing engine.
+
+3)  
 
 
 
