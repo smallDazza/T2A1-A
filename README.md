@@ -387,9 +387,9 @@ Conducting research into a web application: I have choesn the web app Notion.so,
 
 1)  The tech stack used by the Notion application:
     - Frontend:
-        - Frontend foundational browser technologies of HTML, CSS & javascript will be used for the applications UI to be displayed in users web browsers.
+        - Frontend foundational browser technologies of html & javascript will be used for the applications UI to be displayed in users web browsers. Javascript is the programming language of choice for Notions app.
         - React: for a responsive user interface experience, notion is using components from the React javascript library. React allows developers to build application user interfaces by combining different design components or creating custom components using javascript functions, for their application UI screens, web pages and apps.
-        - Redux: this is used to manage the 'state' of the application to keep it behaving consistently in different environments (client, server and native).
+        - Redux: for javascript apps this is used to manage the 'state' of the application and handle complex data flow to keep it behaving consistently in different environments (client, server and native).
         - Typescript: is used to ensure developer type safety and a better experience. This is a syntactic superset that is added on top of javascript as a syntax, so the developers know exactly what type of data is being used in the code.
         - Webpack: to help with the applications performance webpack processes the applications javascript modules into bundles, which is usually one file, for better loading time of web browsers.
     - Backend:
@@ -410,14 +410,36 @@ Conducting research into a web application: I have choesn the web app Notion.so,
     Slim. 2019. I'm the engineer at Notion who rebuilt search. AMA! [Online]
     Available at: https://www.reddit.com/r/Notion/comments/f0lb23/im_the_engineer_at_notion_who_rebuilt_search_ama/
 
+    Umen D. 2024. Best technology stack for SaaS applications [Online]
+    Available at: https://brights.io/blog/saas-technology-stack 
+
 2)  Based on Notions own technology blogg and other sources (referenced below), Notions app infrastructure is being hosted by AWS services. In particular they are using the Amazon RDS service for use with PostgreSQL and AWS boast this is the easiest way to deploy, operate and scale PostgreSQL databases in the cloud. Notion are also using a number of other AWS services being integrated into their infrastructure for helping with large data management, effiency and security purposes. 
     The following AWS infrasturcture services are being utilised by Notions app:
     - Amazon RDS for PostgreSQL cloud service: PostgreSQL databases used for storing users data entered such as texts, headings, rows, lists, images and pages.
     - Amazon S3 object storage servers: S3 servers are used for their ability to store, scale effectively for large amounts of data and support data processing engines at low cost.
-    - Apache Spark via Amazon EMR services:  Spark is a open source distribution processing system for managing large data workloads. Notion use this as their main data processing engine.
+    - Apache Spark via Amazon EMR services:  Spark is a open source distribution processing system for managing large data workloads that can optimize query execution for fast analytic queries against data of any size. Notion use this as their main data processing engine.
 
-3)  
+    References:
 
+    Notion tech blogg. 2024. Building and scaling Notion’s data lake [Online]
+    Available at: https://www.notion.so/blog/building-and-scaling-notions-data-lake
+
+    Labs Relbis. 2024. Examining Notion's Backend Architecture [Online]
+    Available at: https://labs.relbis.com/blog/2024-04-18_notion_backend
+
+    Notion Help page. 2024. Security practices [Online]
+    Available at: https://www.notion.so/help/security-and-privacy
+
+    AWS services referenced. [Online]:
+    https://aws.amazon.com/rds/postgresql/ , https://aws.amazon.com/s3/ , https://aws.amazon.com/what-is/apache-spark/
+
+3)  The interaction between Notions app technologies starts with the front end and users inputing their data into Notions user interface.Their user interface is primarily built using React and its javascript libraries, which are combined to create dynamic and interactive web app pages. I cant exactly find out the way Notion have deployed Redux to interact within their apps environment as it can have many uses, but most use Redux when you have a complex state management scenario, with many components that need access to a shared state. It's particularly helpful in large-scale applications where the patterns and tools provided by Redux make it easier to understand when, where, why, and how the state in your application is being updated, and how your application logic will behave when those changes occur.
+
+Then the interface will use Notions dedicated APIs which will be a webserver(s) using the Express.js framework sitting on top of the Node.js cross platform runtime environment. Node is used to construct Notions API endpoints with Express managing the server side routing. This setup allows the application to handle large scale requests in the background without any lag, ensuring real time updates and a smoother experience for the users. Node.js ability to scale up very quickly also ensures that as Notions use grows in popularity the application can still deliver reliability and performance.
+
+Next is the Notion PostgreSQL databases with its high performance abilities to store and manage millions of users data in the forms of blocks, files, pages and spaces efficiently. Again Notion have chosen these types of databases for their scalability aspects and from one of there tech bloggs have demonstrated their database sharding strategy. Because their block data in Postgres was doubling every 6-12 months they started horizontally sharding each Postgres physical instance. In 2023 they increased their physical instances to 96 with 5 logical shards per instance, thus the Notion data lake comprised of 480 logical shards.
+
+4)  
 
 
 
