@@ -345,7 +345,7 @@ In a relational database the integrity aspects are known as 'Integrity Constrain
 
 1) Domain integrity constraint: these contraints are applied to each attribute in the database to ensure and check the value being entered meets the correct data type set by the constraint. For example, these constraints can be integer, character, date, time, string, etc. An example of these being used to create a table & its columns will be the blue code text: 
 
-![Domain contraint](/images/domain%20constraint.png)
+![Domain contraint](./images/domain%20constraint.png)
 
 2) Entity integrity constraint: these constraints enforce the integrity of a tables data by ensuring its uniqueness. It does this by restricting the use of null values into the database attributes. Most commonly used by ensuring a primary key value in a table cannot be null, as this is a unique identifier for all rows. Example of code to create this will be the not null text:
 
@@ -510,6 +510,7 @@ So to define each of the relationships between all entities would be like this:
 7) I have designed the following normalised PostgreSQL database ERD diagram of Notions application, researched in Answers 12.4,5,6 above as in this image:
 
 ![Notion application ERD diagram](./images/Notion%20ERD%20diagram.png)
+
 
 
     
