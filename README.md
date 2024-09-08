@@ -501,11 +501,11 @@ Available at: https://labs.relbis.com/blog/2024-04-18_notion_backend#data-model
             - foreign key = page_id
 
 So to define each of the relationships between all entities would be like this:
-    - users_workspace to pages : One to Many (mandatory)
-    - pages to text: One to Many (optional)
-    - pages to to_do_points: One to Many (optional)
-    - pages to images: One to Many (optional)
-    - pages to lists: One to Many (optional)
+- users_workspace to pages : One to Many (mandatory)
+- pages to text: One to Many (optional)
+- pages to to_do_points: One to Many (optional)
+- pages to images: One to Many (optional)
+- pages to lists: One to Many (optional)
 
 7) I have designed the following normalised PostgreSQL database ERD diagram of Notions application, researched in Answers 12.4,5,6 above as in this image:
 
