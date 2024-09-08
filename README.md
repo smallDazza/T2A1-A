@@ -283,7 +283,8 @@ Specifically regarding social media applications and the legal obligations of th
     - if your informaation will be disclosed outside of Australia and the other countries they will disclose it to.
     - may also include the time frame they hold onto your personal information.
 
-    Reference: ![Privacy Act 1988, Schedule 1, Part 1.](https://www.legislation.gov.au/C2004A03712/latest/text)
+    Reference: Privacy Act 1988, Schedule 1, Part 1.
+    https://www.legislation.gov.au/C2004A03712/latest/text
 
 - Personal & sensitive information collected by a organisation:
     - Personal information will refer to a individuals name, address, phone number, DOB, signature, photographs, biometrics and location information from a mobile device. 
@@ -294,13 +295,15 @@ Specifically regarding social media applications and the legal obligations of th
     - the organisation must only collect personal information by lawful & fair means.
     - the organisation must collect personal information about that individual only from the individual.
 
-    Reference: ![Privacy Act 1988, Schedule 1, Part 2, Principle 3.](https://www.legislation.gov.au/C2004A03712/latest/text)
+    Reference: Privacy Act 1988, Schedule 1, Part 2, Principle 3.
+    https://www.legislation.gov.au/C2004A03712/latest/text
 
 - Unsolicited Personal Information: if the organisation recieves personal information it did not ask for / solicit, then the organisation needs to determine if they would have collected the information using the same methods in above Principle 3:
     - If not = they must destroy the unsolicited personal information.
     - If so = they must notify the individual as per Principle 5 details and to make them aware of the collection of their personal information and hold it following the same privacy act guidelines.
 
-    Reference: ![Privacy Act 1988, Schedule 1, Part 2, Principle 4.](https://www.legislation.gov.au/C2004A03712/latest/text)
+    Reference: Privacy Act 1988, Schedule 1, Part 2, Principle 4.
+    https://www.legislation.gov.au/C2004A03712/latest/text
 
 - Notification of collecting personal information: when an organisation collects an individuals personal information it must notify the individual that it has done so and :
     - the organisation must identify itself and its contact details.
@@ -308,14 +311,16 @@ Specifically regarding social media applications and the legal obligations of th
     - the purposes for which they will use this information, including if they share this information with any other organisations.
     - the organistion must disclose how the individuals can access their privacy policy and allow them access to their personal information and / or make complaints about their use of this personal information.
 
-    Reference: ![Privacy Act 1988, Schedule 1, Part 2, Principle 5.](https://www.legislation.gov.au/C2004A03712/latest/text)
+    Reference: Privacy Act 1988, Schedule 1, Part 2, Principle 5.
+    https://www.legislation.gov.au/C2004A03712/latest/text
 
 - Dealing with personal information: if an organisation has collected / holds the personal information of an individual for a particular primary purpose then it must not use or disclose this information for any other secondary purposes unless:
     - they receive the consent of the individual to do so.
     - individuals would expect their personal information to be used for the secondary purpose if it is related to the primary purpose.
     - required by an Australian law or court order.
 
-    Reference: ![Privacy Act 1988, Schedule 1, Part 3, Principle 6.](https://www.legislation.gov.au/C2004A03712/latest/text)
+    Reference: Privacy Act 1988, Schedule 1, Part 3, Principle 6.
+    https://www.legislation.gov.au/C2004A03712/latest/text
 
 ## Question 9 Answers:
 A relational database allows data to be stored in tables that are related to each other using defined relationships. The structural aspects of these types of databases are:
@@ -341,12 +346,15 @@ In a relational database the integrity aspects are known as 'Integrity Constrain
 1) Domain integrity constraint: these contraints are applied to each attribute in the database to ensure and check the value being entered meets the correct data type set by the constraint. For example, these constraints can be integer, character, date, time, string, etc. An example of these being used to create a table & its columns will be the blue code text: 
 
 ![Domain contraint](/images/domain%20constraint.png)
+
 2) Entity integrity constraint: these constraints enforce the integrity of a tables data by ensuring its uniqueness. It does this by restricting the use of null values into the database attributes. Most commonly used by ensuring a primary key value in a table cannot be null, as this is a unique identifier for all rows. Example of code to create this will be the not null text:
 
 ![Entity constraint](./images/entity%20constraint.png)
+
 3) Referential integrity constraint: these constraints establish a relationship and enforce data integrity between 2 tables also preventing inconsistences when refering to data across different tables. When a foreign key in a table 2 which references a primary key in another table 1, these constraints make sure every foreign key value exists in the table 1 primary key value. In code an example of the foreign key references:
 
-![Referential constraint](./images/Referential%20constraint.png) 
+![Referential constraint](./images/Referential%20constraint.png)
+
 4) Key integrity constraint: these constraints are used to uniquely identify one or more columns in a table and restrict duplicate values. The primary key constraint is a good example of this where it is used to uniquely identify a each row in the database ensuring no records will have the same primary key value. In code using the primary key:
 
 ![key constraint](./images/key%20constraint.png)
@@ -367,6 +375,7 @@ The manipulative aspects of a relational database using SQL has 2 aspects, one b
 - Data Definition Language (DDL) are a set of commands used to define the schema of a database. Such commands will specify the structure of the database objects like the tables, indexes, views and constraints. Types of DDL commands are CREATE, DROP, ALTER, TRUNCATE AND RENAME and once these have been executed they automatically commit the changes, so cannot be undone. Examples in SQL:
 
 ![DDL Commands](./images/DDL%20commands.png)
+
 - Data Manipulation Commands (DML) are a set of commands used to manipulate data inside of database tables. The operations they perform on the database data are transactional to add, alter, retrieve or remove and so do not automatically commit when executed, so can be rolled back if necessary should any errors happen. The types of DML commands used are SELECT, INSERT, UPDATE, MERGE and DELETE. Example in SQL:
 
 ![DML Commands](./images/DML%20commands.png)
@@ -439,7 +448,7 @@ Conducting research into a web application: I have choesn the web app Notion.so,
 
     Next is the Notion PostgreSQL databases with its high performance abilities to store and manage millions of users data in the forms of blocks, files, pages and spaces efficiently. Again Notion have chosen these types of databases for their scalability aspects and from one of there tech bloggs have demonstrated their database sharding strategy. Because their block data in Postgres was doubling every 6-12 months they started horizontally sharding each Postgres physical instance. In 2023 they increased their physical instances to 96 with 5 logical shards per instance, thus the Notion data lake comprised of 480 logical shards.
 
-### Note for Answers 4,5,6 & 7 = Notions application has many different use cases for multiple different individuals or business environments. For these answers I have only specificly researched the use case of a individual user accessing one workspace environment to create their own pages and content. Example: 
+### Note For Research on Answers 4,5,6 & 7 = Notions application has many different use cases for multiple different individuals or business environments. For these answers I have only specificly researched the use case of a individual user accessing one workspace environment to create their own pages and content. Example: 
 
 ![Notions use case = Darrens Page](./images/Notion%20use%20case%20=%20Darrens%20Page.png)
 
@@ -490,12 +499,13 @@ Available at: https://labs.relbis.com/blog/2024-04-18_notion_backend#data-model
         - lists entity:
             - primary key = list_id
             - foreign key = page_id
+
 So to define each of the relationships between all entities would be like this:
-    - users_workspace to pages : One to Many
-    - pages to text: One to Many
-    - pages to to_do_points: One to Many
-    - pages to images: One to Many
-    - pages to lists: One to Many
+    - users_workspace to pages : One to Many (mandatory)
+    - pages to text: One to Many (optional)
+    - pages to to_do_points: One to Many (optional)
+    - pages to images: One to Many (optional)
+    - pages to lists: One to Many (optional)
 
 7) I have designed the following normalised ERD diagram of the Notion application researched in Answers 12.1,2,3,4,5,6 above:
 
