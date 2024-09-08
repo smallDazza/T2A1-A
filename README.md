@@ -435,11 +435,79 @@ Conducting research into a web application: I have choesn the web app Notion.so,
 
 3)  The interaction between Notions app technologies starts with the front end and users inputing their data into Notions user interface.Their user interface is primarily built using React and its javascript libraries, which are combined to create dynamic and interactive web app pages. I cant exactly find out the way Notion have deployed Redux to interact within their apps environment as it can have many uses, but most use Redux when you have a complex state management scenario, with many components that need access to a shared state. It's particularly helpful in large-scale applications where the patterns and tools provided by Redux make it easier to understand when, where, why, and how the state in your application is being updated, and how your application logic will behave when those changes occur.
 
-Then the interface will use Notions dedicated APIs which will be a webserver(s) using the Express.js framework sitting on top of the Node.js cross platform runtime environment. Node is used to construct Notions API endpoints with Express managing the server side routing. This setup allows the application to handle large scale requests in the background without any lag, ensuring real time updates and a smoother experience for the users. Node.js ability to scale up very quickly also ensures that as Notions use grows in popularity the application can still deliver reliability and performance.
+    Then the interface will use Notions dedicated APIs which will be a webserver(s) using the Express.js framework sitting on top of the Node.js cross platform runtime environment. Node is used to construct Notions API endpoints with Express managing the server side routing. This setup allows the application to handle large scale requests in the background without any lag, ensuring real time updates and a smoother experience for the users. Node.js ability to scale up very quickly also ensures that as Notions use grows in popularity the application can still deliver reliability and performance.
 
-Next is the Notion PostgreSQL databases with its high performance abilities to store and manage millions of users data in the forms of blocks, files, pages and spaces efficiently. Again Notion have chosen these types of databases for their scalability aspects and from one of there tech bloggs have demonstrated their database sharding strategy. Because their block data in Postgres was doubling every 6-12 months they started horizontally sharding each Postgres physical instance. In 2023 they increased their physical instances to 96 with 5 logical shards per instance, thus the Notion data lake comprised of 480 logical shards.
+    Next is the Notion PostgreSQL databases with its high performance abilities to store and manage millions of users data in the forms of blocks, files, pages and spaces efficiently. Again Notion have chosen these types of databases for their scalability aspects and from one of there tech bloggs have demonstrated their database sharding strategy. Because their block data in Postgres was doubling every 6-12 months they started horizontally sharding each Postgres physical instance. In 2023 they increased their physical instances to 96 with 5 logical shards per instance, thus the Notion data lake comprised of 480 logical shards.
 
-4)  
+### Note for Answers 4,5,6 & 7 = Notions application has many different use cases for multiple different individuals or business environments. For these answers I have only specificly researched the use case of a individual user accessing one workspace environment to create their own pages and content. Example: 
+
+![Notions use case = Darrens Page](./images/Notion%20use%20case%20=%20Darrens%20Page.png)
+
+4)  Notion have structured their data inside the databases using what they call a block model. From their Notion tech blogg page, they have written a number of blogg posts to explain / describe this data structure (references below). Everything users see or create in the Notion app like pages, text, to do points, images and lists is modeled as a different blocks. These 'blocks' are entities in the backend stored in a specific Postgres database.
+
+    The data model structure of the entities within a database are a versatile hierarchical structure similar to a tree model from where it starts with a main / 'Parent' entity. From their a 'Child' entity is linked to the main / 'Parent' entity, then below this multiple sub entities are linked or not to the 'Child' entity depending on the use case of each user and their data entry inputed. Each of these entities represents certains users pages and inputed data from the front end and are explained in question 5 answers. 
+
+    Notion have designed this block model structure so that all their users information can stand on its own and have the ability to customize how it is organized and shared. A basic diagram image of Notions enitity data structure model is here: 
+
+![Notion database model](./images/Database%20Block%20model.png)
+
+Reference:
+
+Tech Blogg. 2024. Building and scaling Notion’s data lake [Online]
+Available at: https://www.notion.so/blog/building-and-scaling-notions-data-lake
+
+Tech Blogg. 2024. The data model behind Notion's flexibility [Online]
+Available at: https://www.notion.so/blog/data-model-behind-notion
+
+Labs Relbis. 2024. Examining Notion's Backend Architecture [Online]
+Available at: https://labs.relbis.com/blog/2024-04-18_notion_backend#data-model
+
+5)  The enitities in a Notion database are specifically designed to reflect the users workspace design. Notion have allocated each entity to be a specific block of user entered data. For example in the above data model image, each entity will represent and most likely named as users_workspace, pages, text, to_do_points, images and lists. All these entities and their attributes are listed below:
+    - The first would be the main / 'Parent' entity allocated as the users workspace (users_workspace) and will contain attributes reflecting the users details like:  user_id, user_name, user_email, user_login, user_password.
+    - The next entity would be the users pages created (pages) and will contain attributes reflecting the users pages and the content added like:  id, type, title, parent_id.
+    - The following sub entities will contain user entered information from all the users pages created:
+        - text entity will contain the text the user has added as content for each page to be displayed, attributes like: text_id, text_content, page_id.
+        - to_do_points entity will contain the text of multiple points the user has assigned to each page, attributes like: todo_id, todo_text, page_id.
+        - images entity will contain the saved image assigned to a page to be displayed, attributes like: image_id, image, page_id.
+        - lists entity will contain any list items saved in a page to be displayed, attributes like: list_id, list_item, page_id.
+    
+6)  Because as mentioned above Notion have structured their databases as a versatile hierarchical structure similar to a tree model, this means the relationships between the database entities is very specifc. One users_workspace entity can have a relationship with multipe user pages and then each of the individual pages created can have multiple attributes added to them from the sub entities. These relationships require each entity to have a primary key and a foreign key. These keys in each entity are as follows:
+    - users_workspace entity is the main 'Parent' entity and contains:
+        - primary key = user_id.
+    - pages entity as a 'Child' of the user_workspace will contain:
+        - primary key = id.
+        - foreign key = parent_id.
+    - the sub entities will contain:
+        - text entity:
+            - primary key = text_id
+            - foreign key = page_id
+        - to_do_points entity:
+            - primary key = todo_id
+            - foreign key = page_id
+        - images entity:
+            - primary key = image_id
+            - foreign key = page_id
+        - lists entity:
+            - primary key = list_id
+            - foreign key = page_id
+So to define each of the relationships between all entities would be like this:
+    - users_workspace to pages : One to Many
+    - pages to text: One to Many
+    - pages to to_do_points: One to Many
+    - pages to images: One to Many
+    - pages to lists: One to Many
+
+7) I have designed the following normalised ERD diagram of the Notion application researched in Answers 12.1,2,3,4,5,6 above:
+
+![Notion application ERD diagram](./images/Notion%20ERD%20diagram.png)
+
+
+    
+
+
+
+
+
 
 
 
