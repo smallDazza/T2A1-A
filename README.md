@@ -507,7 +507,7 @@ So to define each of the relationships between all entities would be like this:
     - pages to images: One to Many (optional)
     - pages to lists: One to Many (optional)
 
-7) I have designed the following normalised ERD diagram of the Notion application researched in Answers 12.1,2,3,4,5,6 above:
+7) I have designed the following normalised PostgreSQL database ERD diagram of Notions application, researched in Answers 12.4,5,6 above as in this image:
 
 ![Notion application ERD diagram](./images/Notion%20ERD%20diagram.png)
 
